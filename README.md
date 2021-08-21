@@ -53,6 +53,25 @@ zplugin light jonmosco/kube-ps1
 PROMPT='$(kube_ps1)'$PROMPT
 ```
 
+#### [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh)
+
+1. Clone this repository into `$ZSH_CUSTOM/plugins` (by default `~/.oh-my-zsh/custom/plugins`)
+
+    ```sh
+    git clone https://github.com/janmoco/kube-ps1 ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/kube-ps1
+    ```
+
+2. Add the plugin to the list of plugins for Oh My Zsh to load (inside `~/.zshrc`):
+
+    ```sh
+    plugins=( 
+        # other plugins...
+        kube-ps1
+    )
+    ```
+
+3. Start a new terminal session.
+
 ## Requirements
 
 The default prompt assumes you have the `kubectl` command line utility installed.

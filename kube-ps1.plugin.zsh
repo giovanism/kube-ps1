@@ -1,0 +1,1 @@
+source ${0:A:h}/kube-ps1.sh
